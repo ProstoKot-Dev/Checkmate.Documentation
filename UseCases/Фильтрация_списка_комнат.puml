@@ -1,0 +1,15 @@
+@startuml
+
+title Применение фильтрации списка комнат.
+
+(Применение фильтрации к списку комнат) as filterRooms
+(По списку сотрудников) as filterEmployees
+(По значению статуса комнаты) as filterStatusRoom 
+(По принадлежности комнаты пользователю) as filterSelfRoom
+
+Employee -- filterRooms
+filterSelfRoom .up.> filterRooms : <<extend>>
+filterEmployees .up.> filterRooms : <<extend>>
+filterStatusRoom .up.> filterRooms : <<extend>>
+
+@enduml
