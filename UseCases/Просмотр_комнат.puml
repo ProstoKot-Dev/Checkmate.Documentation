@@ -1,0 +1,15 @@
+@startuml
+
+title Просмотр списка комнат.
+
+(Просмотр списка комнат) as viewRooms
+(Применение фильтрации к списку комнат) as filterRooms
+(Применение сортировки списка комнат) as sortRooms
+(Выбор комнаты) as chooseRoom
+
+Employee -- viewRooms
+
+viewRooms -left-> chooseRoom : <<include>>
+filterRooms .up.> viewRooms : <<extend>>
+sortRooms .up.> viewRooms : <<extend>>
+@enduml

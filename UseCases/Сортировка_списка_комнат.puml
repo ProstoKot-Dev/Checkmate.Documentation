@@ -1,0 +1,11 @@
+@startuml
+
+title Сортировка списка комнат.
+
+(Применение сортировки списка комнат) as sortingRooms
+(Применение сортировки по дате создания комнат) as sortingDateCreated
+
+Employee -- sortingRooms
+sortingDateCreated .up.> sortingRooms : <<extend>>
+
+@enduml

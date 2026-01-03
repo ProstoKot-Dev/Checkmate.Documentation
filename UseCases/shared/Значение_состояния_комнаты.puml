@@ -1,0 +1,14 @@
+@startuml
+
+title Значение состояния комнаты.
+
+(Значение статуса комнаты) as status
+(Ожидание) as waiting
+(Активна) as active
+(Завершена) as finished
+
+waiting .up.> status : <<extend>>
+active .up.> status : <<extend>>
+finished .up.> status : <<extend>>
+
+@enduml
