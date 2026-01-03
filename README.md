@@ -1,1 +1,3 @@
-# Checkmate.Documentation
+# Checkmate 
+
+Репозиторий предназначен для хранения документации по проекту Checkmate.
