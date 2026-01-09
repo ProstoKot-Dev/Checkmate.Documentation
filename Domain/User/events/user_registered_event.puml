@@ -1,0 +1,16 @@
+﻿@startuml
+
+!include ./user_event_base.puml
+
+class UserRegisteredEvent extends UserEventBase{
+    + UserId: Guid
+    + Email: string
+    + UserName: string
+    + RegisteredAt: DateTime
+}
+
+note top of UserRegisteredEvent
+    Возникает при регистрации нового пользователя.
+end note
+
+@enduml

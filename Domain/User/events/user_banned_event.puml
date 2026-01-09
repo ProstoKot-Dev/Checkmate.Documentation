@@ -1,0 +1,16 @@
+﻿@startuml
+
+!include ./user_event_base.puml
+
+class UserBannedEvent extends UserEventBase {
+    + BannedBy: Guid
+    + Reason: string
+    + BannedUntil: DateTime?
+    + BannedAt: DateTime
+}
+
+note top of UserBannedEvent
+    Возникает при блокировке пользователя.
+end note
+
+@enduml

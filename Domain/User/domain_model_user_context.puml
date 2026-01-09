@@ -1,0 +1,12 @@
+﻿@startuml
+
+package UserContext {
+
+    title Контекст пользователя.
+    
+    !include ./events/domain_user_events.puml
+    !include ./user.puml
+    
+}
+
+@enduml

@@ -1,0 +1,15 @@
+﻿@startuml
+
+!include ./user_event_base.puml
+
+class UserLoggedInEvent extends UserEventBase {
+    + UserId: Guid
+    + LoginTime: DateTime
+    + IpAddress: string
+}
+
+note top of UserLoggedInEvent
+    Возникает при успешном входе пользователя в сервис.
+end note
+
+@enduml

@@ -1,0 +1,13 @@
+﻿@startuml
+
+class UserStatus extends ValueObject {
+    + IsActive: bool
+    + IsBanned: bool
+    + BannedUntil: DateTime?
+    + BanReason: string?
+    + LastSeenAt: DateTime
+    + RegisteredAt: DateTime
+    + UpdatedAt: DateTime
+}
+
+@enduml

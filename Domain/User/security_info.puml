@@ -1,0 +1,11 @@
+﻿@startuml
+
+class SecurityInfo extends ValueObject {
+    + PasswordHash: string
+    + PasswordChangedAt: DateTime
+    + LastFailedAttempt: DateTime?
+    + FailedAttemptsCount: int
+    + Salt: string
+}
+
+@enduml

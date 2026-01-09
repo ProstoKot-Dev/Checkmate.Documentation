@@ -1,0 +1,13 @@
+﻿@startuml
+
+package UserEvents {
+    
+    !include ./user_registered_event.puml
+    !include ./user_banned_event.puml
+    !include ./user_logged_in_event.puml
+    !include ./user_password_changed_event.puml
+    !include ./user_unbanned_event.puml
+    
+}
+
+@enduml

@@ -1,0 +1,10 @@
+﻿@startuml
+
+interface IDomainEvent
+
+abstract UserEventBase extends IDomainEvent {
+    + Id: Guid
+    # UserEventBase(userId: Guid)
+}
+
+@enduml

@@ -1,0 +1,9 @@
+﻿@startuml
+
+class Name extends ValueObject {
+    + FirstName: string
+    + MiddleName: string?
+    + LastName: string
+}
+
+@enduml

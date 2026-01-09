@@ -1,0 +1,8 @@
+﻿@startuml
+
+class Email extends ValueObject {
+    + Address: string
+    + IsVerified: bool
+}
+
+@enduml

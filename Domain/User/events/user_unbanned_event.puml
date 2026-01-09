@@ -1,0 +1,14 @@
+﻿@startuml
+
+!include ./user_event_base.puml
+
+class UserUnbannedEvent extends UserEventBase {
+    + UnbannedBy: Guid
+    + UnbannedAt: DateTime
+}
+
+note top of UserUnbannedEvent
+    Возникает при снятии блокировки с пользователя.
+end note
+
+@enduml

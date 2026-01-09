@@ -1,0 +1,16 @@
+﻿@startuml
+
+!include ../shared/email.puml
+!include ../shared/name.puml
+
+class UserIdentity extends ValueObject {
+    + Email: Email
+    + Name: Name
+    + UserName: string
+    + PhoneNumber: string?
+}
+
+UserIdentity .up.> Email
+UserIdentity .up.> Name
+
+@enduml

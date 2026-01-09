@@ -1,0 +1,29 @@
+﻿@startuml
+
+package UserModel {
+
+!include ./profile_reference.puml
+!include ./security_info.puml
+!include ./user_identity.puml
+!include ./user_settings.puml
+!include ./user_status.puml
+
+entity User {
+    + Id: Guid
+    + Identity: UserIdentity
+    + Security: SecurityInfo
+    + Status: UserStatus
+    + Settings: UserSettings
+    + ProfileRef: ProfileReference
+}
+
+User .up.> UserIdentity
+User .up.> SecurityInfo
+User .up.> UserStatus
+User .up.> UserSettings
+User .up.> ProfileReference
+User .up.> UserIdentity
+
+}
+
+@enduml

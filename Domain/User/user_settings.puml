@@ -1,0 +1,7 @@
+﻿@startuml
+
+class UserSettings extends ValueObject {
+    + SoundEnabled: bool
+}
+
+@enduml
